@@ -3,7 +3,7 @@ import { FaSearch, FaUser } from 'react-icons/fa';
 import logo1 from '../../images/hero/logo1.jpg'; 
 import { Link } from 'react-router-dom';
 import img from '../../images/hero/cover6.png';
-import ProdData from '../data/ProdData'; // Import your product data
+import ProdData from '../data/ProdData'; 
 
 const LogoSearchBar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);

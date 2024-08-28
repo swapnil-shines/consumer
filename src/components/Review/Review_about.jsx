@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import img1 from '../../images/Review/review.jpg'
 import img2 from '../../images/Review/green.jpg'
-import rev from './Rev';
+
 
 const Review_about = () => {
   return (
@@ -22,7 +22,7 @@ const Review_about = () => {
       {/* Box with Links */}
       <div className="w-1/2 h-[450px] p-8 mt-8">
         <div className="grid grid-cols-2  justify-center items-center mt-14">
-          <Link to="/rev" className="text-black text-center bg-custom_gradient border-2 border-bg-white rounded-md text-2xl font-semibold px-6 py-8 tracking-wider hover:bg-white hover:text-white hover:border-white transition-all duration-300">
+          <Link to="/Rev" className="text-black text-center bg-custom_gradient border-2 border-bg-white rounded-md text-2xl font-semibold px-6 py-8 tracking-wider hover:bg-white hover:text-white hover:border-white transition-all duration-300">
             Review
           </Link>
           <Link to="/about-us" className="text-white text-center bg-white border-2 border-black rounded-md text-2xl font-semibold px-6 py-4 tracking-wider hover:bg-white hover:text-white hover:border-white transition-all duration-300">

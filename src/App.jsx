@@ -1,42 +1,37 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import Products from './components/Products/Products';
-import Product from './components/Product/Product';
-import RetailProd from './components/Product/RetailProd';
+import Navbar from './Components/Navbar/Navbar';
+import Hero from './Components/Hero/Hero';
+import Products from './Components/Products/Products';
+import Product from './Components/Product/Product';
+import RetailProd from './Components/Product/RetailProd';
 import Home from './Page/Home';
-import WholeProd from './components/Product/WholeProd';
-import TopProducts from './components/TopProducts/TopProducts';
-import Vegetable from './components/Vegetable/Vegetable';
-import WholeSale from './components/Farmers_prod/WholeSale'
-import Cart from './components/Cart/Cart';
+import WholeProd from './Components/Product/WholeProd';
+import TopProducts from './Components/TopProducts/TopProducts';
+import Vegetable from './Components/Vegetable/Vegetable';
+import WholeSale from './Components/Farmers_prod/WholeSale'
+import Cart from './Components/Cart/Cart';
 
-import Dashboard from './components/Dashboard/Dashboard';
-import Footer from './components/Footer/Footer';
-import Farmer from './components/Farmers_prod/Farmer'
-import Retailor from './components/Farmers_prod/Retailor'
-import Feature from './components/Feature/Feature'
-import Wishlist from './components/Wishlist/Wishlist'
-import ProceedCheckOut from './components/ProceedCheckOut/ProceedCheckOut'
-import OrderHistory from './components/OrderHistory/OrderHistory'
-import AccountDetail from './components/AccountDetail/AccountDetail'
+import Dashboard from './Components/Dashboard/Dashboard';
+import Footer from './Components/Footer/Footer';
+import Farmer from './Components/Farmers_prod/Farmer'
+import Retailor from './Components/Farmers_prod/Retailor';
+import Feature from './Components/Feature/Feature';
+
+
+import Wishlist from './Components/Wishlist/Wishlist'
+import ProceedCheckOut from './Components/ProceedCheckOut/ProceedCheckOut'
+import OrderHistory from './Components/OrderHistory/OrderHistory'
+import AccountDetail from './Components/AccountDetail/AccountDetail'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
-import Review_about from './components/Review/Review_about';
-import Rev from './components/Review/Rev';
+import Review_about from './Components/Review/Review_about';
+import Rev from './Components/Review/Rev';
 
 const App = () => {
-  React.useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 800,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
-  }, []);
+  
 
   return (
     <BrowserRouter>

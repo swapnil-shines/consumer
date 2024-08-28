@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 
-// use local storage to manage cart data
+
 
 const addToDB = id =>{
     let cart = {};
@@ -10,7 +10,6 @@ const addToDB = id =>{
     }
    
 
-    // add quantity
     const quantity = cart[id];
     if(quantity){
         const newQuantity = quantity + 1;
@@ -34,7 +33,6 @@ const removeOrderFromHistory = (orderId) => {
 const getStoredCart = () =>{
     let shoppingCart = {};
 
-    //get the shopping cart from local storage
     const storedCart = localStorage.getItem('cart');
     if(storedCart){
         shoppingCart = JSON.parse(storedCart);

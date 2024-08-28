@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
@@ -14,7 +14,7 @@ const Menu = [
 ];
 
 const Navbar = () => {
-    const navigate = useNavigate(); // Initialize navigate function
+    const navigate = useNavigate(); 
 
     return (
         <div>
@@ -27,7 +27,7 @@ const Navbar = () => {
                                 <h1 className='text-xl italic text-green-800'>Harvest <br /> Home</h1>
                             </a>
                         </div>
-                        <div data-aos="zoom-in" className="flex justify-center py-2">
+                        <div >
                             <ul className="sm:flex hidden items-center gap-4">
                                 {Menu.map((data) => (
                                     <li key={data.id}>

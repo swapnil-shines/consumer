@@ -1,8 +1,10 @@
 import React from 'react'
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Feature from '../Feature/Feature';
+
 
 import Hero from '../Hero/Hero';
-import Feature from '../Feature/Feature'
+
 
 const Dashboard  = () => {
   return (

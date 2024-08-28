@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { removeFromDb, getStoredCart, deleteShoppingCart, saveOrder } from '../../utilities/localDB';
 import Swal from 'sweetalert2';
-import ProdData from '../data/ProdData';
+import ProdData from '../data/ProdData.jsx';
 import FarmersProd from '../data/FarmersProd';
 import Retail from '../data/Retail';
 
@@ -30,13 +30,12 @@ const Cart = () => {
             const newQuantity = item.quantity + increment;
 
             if (newQuantity <= 0) {
-                removeFromDb(id); // Remove from localDB
+                removeFromDb(id); 
                 updatedCart = updatedCart.filter(product => product.id !== id);
             } else {
                 item.quantity = newQuantity;
                 updatedCart[itemIndex] = item;
 
-                // Update localStorage
                 let savedCart = getStoredCart();
                 savedCart[id] = item.quantity;
                 localStorage.setItem('cart', JSON.stringify(savedCart));
@@ -62,6 +61,7 @@ const Cart = () => {
 
             saveOrder(order);
             navigate('/ProceedCheckOut'); 
+            
         } else {
             Swal.fire(
                 'Error!',

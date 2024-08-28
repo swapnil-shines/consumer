@@ -52,10 +52,10 @@ const TopProducts = ({ handleOrderPopup }) => {
       <div className=" bg-primary/40 ">
         {/* Header section */}
         <div className="text-left mb-16 underline ">
-          <p data-aos="fade-up" className="text-sm text-primary">
+          <p  className="text-sm text-primary">
 
           </p>
-          <h1 data-aos="fade-up" className="text-3xl font-bold">
+          <h1 className="text-3xl font-bold">
             Direct from Farmers: Fresh and Authentic
           </h1>
         </div>
@@ -64,7 +64,7 @@ const TopProducts = ({ handleOrderPopup }) => {
           {ProdData.slice(7, 11).map((product) => (
             <div
               key={product.id}
-              data-aos="zoom-in"
+              
               className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group w-full max-w-[300px]"
             >
               {/* Image section */}
